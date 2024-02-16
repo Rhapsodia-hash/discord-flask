@@ -12,7 +12,7 @@ def home():
     intents.members = True
     client = discord.Client(intents=intents)
 
-    return f"algo es: {client}"
+    return "Estamos con el cliente activo"
 
 
 @app.route("/about")
