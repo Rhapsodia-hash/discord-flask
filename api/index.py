@@ -12,7 +12,7 @@ def home():
     intents.members = True
     client = discord.Client(intents=intents)
 
-    return client
+    return f"algo es: {client}"
 
 
 @app.route("/about")
