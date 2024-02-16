@@ -1,5 +1,5 @@
 from flask import Flask
-import discord
+import discord,json, datetime,mysql.connector
 from discord import Intents
 
 app = Flask(__name__)
