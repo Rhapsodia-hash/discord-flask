@@ -2,6 +2,10 @@ import discord, json, datetime
 import mysql.connector
 from discord.ext import commands
 from discord import Intents
+from flask import Flask
+import discord
+
+app = Flask(__name__)
 
 intents = Intents.all()
 intents.typing = False
@@ -331,6 +335,15 @@ async def members_command(self, ctx):
         await ctx.send(member.name)
 
     # help(discord.Message)
+@app.route("/")
+def home():
+
+    return "Hello, World!"
 
 
-client.run("MTIwMDE0OTM2NjIwNDI4MDkxMg.GHEL3Z._7BaqMwqz3AGCOfoNSWzdSWQRTvQCs9gFM10SM")
+@app.route("/about")
+def about():
+    return "About"
+client.run(
+        "MTIwMDE0OTM2NjIwNDI4MDkxMg.GHEL3Z._7BaqMwqz3AGCOfoNSWzdSWQRTvQCs9gFM10SM"
+    )
