@@ -334,7 +334,7 @@ async def members_command(self, ctx):
 @app.route("/")
 def home():
     client.run("MTIwMDE0OTM2NjIwNDI4MDkxMg.GHEL3Z._7BaqMwqz3AGCOfoNSWzdSWQRTvQCs9gFM10SM")
-    return "Estamos con el cliente activo"
+    return "Estamos dentro"
 
 
 @app.route("/about")
