@@ -12,7 +12,7 @@ def home():
     intents.members = True
     client = discord.Client(intents=intents)
 
-    return "Hello, World!"
+    return client
 
 
 @app.route("/about")
