@@ -1,6 +1,5 @@
 from flask import Flask
-from discord.ext import commands
-from discord import Intents
+
 import discord
 
 app = Flask(__name__)
