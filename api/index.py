@@ -328,5 +328,5 @@ async def home():
 
 
 @app.route("/about")
-async def about():
+def about():
     return "About"
