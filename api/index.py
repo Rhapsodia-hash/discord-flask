@@ -329,7 +329,7 @@ def home():
 
 @app.route("/about")
 def about():
-    return "About"
+    return "nooooo"
 def run_discord_bot():
     client.run("YOUR_DISCORD_TOKEN")
 
