@@ -3,7 +3,10 @@ import discord,json, datetime,mysql.connector
 from discord import Intents
 
 app = Flask(__name__)
-
+intents = Intents.all()
+intents.typing = False
+intents.members = True
+client = discord.Client(intents=intents)
 
 def connect_db():
     host = "b2jvfbwwzwgru1w4egfx-mysql.services.clever-cloud.com"
