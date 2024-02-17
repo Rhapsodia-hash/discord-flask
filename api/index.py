@@ -324,7 +324,7 @@ async def on_member_join(member):
 
 @app.route("/")
 def home():
-    return "Estamos dentro bebe\"
+    return "Estamos dentro bebe"
 
 
 @app.route("/about")
