@@ -323,7 +323,7 @@ async def on_member_join(member):
 
 
 @app.route("/")
-async def home():
+def home():
     client.run("MTIwMDE0OTM2NjIwNDI4MDkxMg.GHEL3Z._7BaqMwqz3AGCOfoNSWzdSWQRTvQCs9gFM10SM")
     a = 0
     return "Estamos dentro"
