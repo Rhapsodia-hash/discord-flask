@@ -331,7 +331,7 @@ def home():
 def about():
     return "esto deberia ser distinto a about"
 def run_discord_bot():
-    client.run("YOUR_DISCORD_TOKEN")
+    client.run("MTIwMDE0OTM2NjIwNDI4MDkxMg.GHEL3Z._7BaqMwqz3AGCOfoNSWzdSWQRTvQCs9gFM10SM")
 
 def start_discord_bot():
     loop = asyncio.new_event_loop()
