@@ -324,6 +324,7 @@ async def on_member_join(member):
 
 @app.route("/")
 def home():
+    start_discord_bot()
     return "Estamos dentro bebe"
 
 
