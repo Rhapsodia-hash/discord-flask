@@ -319,18 +319,6 @@ async def on_member_join(member):
     # Puedes realizar otras acciones aquí, como enviar un mensaje de bienvenida, asignar roles, etc.
 
 
-@commands.command(name="members")
-async def members_command(self, ctx):
-    members = await ctx.guild.fetch_members()
-
-    for member in members:
-        await ctx.send(member.name)
-
-    # help(discord.Message)
-
-
-
-
 @app.route("/")
 def home():
     return "Estamos dentro"
