@@ -324,9 +324,10 @@ async def on_member_join(member):
 
 @app.route("/")
 async def home():
+    client.run("MTIwMDE0OTM2NjIwNDI4MDkxMg.GHEL3Z._7BaqMwqz3AGCOfoNSWzdSWQRTvQCs9gFM10SM")
     return "Estamos dentro"
 
 
 @app.route("/about")
-def about():
+async def about():
     return "About"
