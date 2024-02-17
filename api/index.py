@@ -1,5 +1,5 @@
 from flask import Flask
-import discord,json, datetime,mysql.connector
+import discord,json, datetime,mysql.connector, threading
 from discord import Intents
 
 app = Flask(__name__)
@@ -330,3 +330,18 @@ def home():
 @app.route("/about")
 def about():
     return "About"
+def run_discord_bot():
+    client.run("YOUR_DISCORD_TOKEN")
+
+def start_discord_bot():
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(run_discord_bot())
+
+# Inicia el bot de Discord en un hilo
+discord_thread = threading.Thread(target=start_discord_bot)
+discord_thread.start()
+
+# Inicia la aplicación Flask
+if __name__ == "__main__":
+    app.run(debug=True)
